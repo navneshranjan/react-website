@@ -6,6 +6,7 @@ import "./Navbar.css";
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -24,7 +25,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" onClick={closeMobileMenu} className="navbar-logo">
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             TRVL
             <i className="fab fa-typo3" />
           </Link>
@@ -57,7 +58,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/signup"
+                to="/sign-up"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
