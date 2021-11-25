@@ -1,17 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
+
 import { Button } from "./Button";
 import "../App.css";
 import "./HeroSection.css";
 import Video from "../assets/videos/video-1.mp4";
-import { VideoPlayer } from "./VideoPlayer";
+
 import { Link } from "react-router-dom";
 // import Trailer from "../assets/videos/video-1.mp4";
 
 function HeroSection() {
-  const vdo = () => {
-    return <VideoPlayer />;
-  };
-
   return (
     <div className="hero-container">
       <video src={Video} autoPlay loop muted />
